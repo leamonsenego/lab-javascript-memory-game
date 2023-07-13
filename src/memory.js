@@ -38,4 +38,11 @@ class MemoryGame {
   checkIfFinished() {
     return this.pairsGuessed === this.cards.length / 2;
   }
+
+  function toggleCards(card) {
+  card.children[0].classList.toggle("back");
+  card.children[0].classList.toggle("front");
+  card.children[1].classList.toggle("back");
+  card.children[1].classList.toggle("front");
+}
 }
